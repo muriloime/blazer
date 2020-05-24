@@ -1,0 +1,33 @@
+source "https://rubygems.org"
+
+group :development, :test do
+  gem 'rake'
+  gem 'pry' # Easily debug from your console with `binding.pry`
+  gem 'pry-byebug', platform: :mri # Step-by-step debugging
+
+  gem 'cancancan'
+  gem 'pundit'
+  gem 'jruby-openssl', '~> 0.10.1', platform: :jruby
+
+  gem "devise", "~> 4.7"
+
+  gem "rails", "~> 6.0.0"
+  gem "activerecord-jdbcsqlite3-adapter", "~> 60.0", platform: :jruby
+
+  gem "sprockets-rails"
+  gem "sprockets"
+
+  gem "webpacker", "~> 4.0"
+end
+
+group :test do
+  gem 'apparition'
+  gem 'capybara', '~> 3.14'
+
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'rspec-rails'
+  gem "sqlite3", "~> 1.4", platform: :mri
+end
+
+gemspec path: "../.."

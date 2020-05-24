@@ -2,6 +2,12 @@ module Blazer
   class Engine < ::Rails::Engine
     isolate_namespace Blazer
 
+    config.generators do |g|
+      g.test_framework :rspec
+      g.fixture_replacement :factory_bot
+      g.factory_bot dir: 'spec/factories'
+    end
+    
     initializer "blazer" do |app|
       if defined?(Sprockets) && Sprockets::VERSION >= "4"
         app.config.assets.precompile << "blazer/application.js"
