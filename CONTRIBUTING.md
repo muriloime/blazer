@@ -30,7 +30,12 @@ If you’d like to discuss a new feature, create an issue and start the title wi
 
 ## Pull Requests
 
-Fork the project and create a pull request. A few tips:
+Fork the project, run the tests and create a pull request. The test suite 
+(for webpacker installation ) can be run with:
+
+```BUNDLE_GEMFILE=gemfiles/rails_60_webpacker/Gemfile bin/rake```
+
+A few tips:
 
 - Keep changes to a minimum. If you have multiple features or fixes, submit multiple pull requests.
 - Follow the existing style. The code should read like it’s written by a single person.
