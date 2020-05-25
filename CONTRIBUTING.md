@@ -35,6 +35,10 @@ Fork the project, run the tests and create a pull request. The test suite
 
 ```BUNDLE_GEMFILE=gemfiles/rails_60_webpacker/Gemfile bin/rake```
 
+For running the dummy app locally, do: 
+
+```BUNDLE_GEMFILE=gemfiles/rails_60_webpacker/Gemfile bin/rake local server```
+
 A few tips:
 
 - Keep changes to a minimum. If you have multiple features or fixes, submit multiple pull requests.
